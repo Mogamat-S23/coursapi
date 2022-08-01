@@ -44,11 +44,11 @@
 //     console.log('listening for requests on port 3000')
 // });
 
-
+require("dotenv").config();
 const express = require('express');
 const app = express();
 const port = parseInt(process.env.PORT); 
-require("dotenv").config()
+
 // env is envolment  
 let courses = [
        {
