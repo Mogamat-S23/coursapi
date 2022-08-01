@@ -47,7 +47,8 @@
 
 const express = require('express');
 const app = express();
-const port = parseInt(process.env.port) || 4000; 
+const port = parseInt(process.env.PORT); 
+require("dotenv").config()
 // env is envolment  
 let courses = [
        {
